@@ -1,0 +1,36 @@
+# RetentionIQ — pinned dependencies
+# Install with: .venv\Scripts\pip.exe install -r requirements.txt
+# Run with: python -m uvicorn app.main:app --reload
+
+# Backend framework
+fastapi==0.115.12
+starlette==0.46.2
+pydantic==2.14.1
+pydantic-core==2.50.1
+uvicorn==0.54.0
+python-multipart==0.0.32
+
+# ML
+xgboost==3.4.1
+scikit-learn==1.9.1
+joblib==1.6.0
+numpy==2.5.4
+pandas==3.0.6
+
+# Reports
+reportlab==5.0.1
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# Streamlit (for legacy client_app.py — keep but do not use in FastAPI app)
+streamlit==1.65.0
+
+# Testing
+pytest==9.1.1
+anyio==4.15.1
+httpx==0.28.1
+httpcore==1.0.9
+
+# Utilities
+Jinja2==3.1.6
+requests==2.34.2

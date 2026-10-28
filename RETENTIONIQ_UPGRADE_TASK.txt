@@ -1,0 +1,20 @@
+﻿Upgrade the existing RetentionIQ application in this project automatically.
+
+Project: mobile_app_retention_xgboost
+
+Requirements:
+1. Inspect client_app.py, predict.py, the trained model, and existing reports before making changes.
+2. Preserve predict.py, the trained model, datasets, and existing working functionality.
+3. Keep client_app_backup.py unchanged.
+4. Upgrade client_app.py with a professional business dashboard, customer risk management, CSV validation and batch prediction, persistent SQLite analysis history, CSV exports, PDF reports, and model insights.
+5. Add customer search, risk filters, sorting, and recommended retention actions.
+6. Use the existing predict_retention function. Do not retrain or replace the model.
+7. Clearly disclose that the model uses synthetic training data and is not validated for real business decisions.
+8. Handle invalid CSV rows and prediction errors gracefully.
+9. Install no unnecessary dependencies. If PDF generation requires reportlab, add a clear fallback when it is unavailable.
+10. Test the updated application, fix errors, and verify that predictions and report exports work.
+11. Make changes directly to the project files. Do not merely explain what to do or print code for manual copying.
+12. Before modifying any existing file, preserve a backup. Do not delete project data.
+13. Report exactly which files were changed and which tests passed.
+
+Implement the changes now.

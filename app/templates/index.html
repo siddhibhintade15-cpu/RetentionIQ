@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RetentionIQ — Mobile App Retention Analytics</title>
+  <meta name="description" content="XGBoost-powered mobile app user retention prediction and analytics. Synthetic data demonstration — not validated on real customers."/>
+  <meta name="theme-color" content="#4F46E5"/>
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234F46E5'/><path d='M8 22L14 14L18 18L22 10' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>"/>
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="/static/css/style.css"/>
+  <!-- Preload fonts (system fallback if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+</head>
+<body>
+  <!-- App root — React-style SPA mount point -->
+  <div id="app" role="application" aria-label="RetentionIQ Application">
+    <!-- Loading state while JS initialises -->
+    <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;gap:16px;font-family:system-ui,sans-serif;">
+      <svg width="48" height="48" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="url(#g)"/>
+        <defs><linearGradient id="g" x1="0" y1="0" x2="32" y2="32"><stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#7C3AED"/></linearGradient></defs>
+        <path d="M8 22L14 14L18 18L22 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="22" cy="10" r="2" fill="white"/>
+      </svg>
+      <div style="font-size:1.1rem;font-weight:600;color:#4F46E5">RetentionIQ</div>
+      <div style="font-size:0.85rem;color:#9494B0">Loading analytics engine…</div>
+      <div style="width:200px;height:4px;background:#E8E8F0;border-radius:99px;overflow:hidden;">
+        <div style="width:60%;height:100%;background:linear-gradient(90deg,#4F46E5,#7C3AED);border-radius:99px;animation:loadbar 1s ease infinite alternate;"></div>
+      </div>
+      <style>
+        @keyframes loadbar { from { width: 20%; } to { width: 90%; } }
+      </style>
+    </div>
+  </div>
+
+  <!-- Vendored Chart.js (works offline) -->
+  <script src="/static/vendor/chart.umd.min.js"></script>
+  <!-- Application SPA -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "dataset_type": "Synthetic demonstration data",
+  "dataset_rows": 3000,
+  "selected_configuration": {
+    "n_estimators": 50,
+    "max_depth": 3,
+    "learning_rate": 0.1
+  },
+  "xgboost_accuracy": 0.6966666666666667,
+  "xgboost_precision": 0.7024128686327078,
+  "xgboost_recall": 0.7867867867867868,
+  "xgboost_f1_score": 0.7422096317280453,
+  "manual_accuracy_correct_predictions": 418,
+  "manual_accuracy_total_predictions": 600,
+  "manual_accuracy_percent": 69.66666666666667,
+  "confusion_matrix": [
+    [
+      156,
+      111
+    ],
+    [
+      71,
+      262
+    ]
+  ],
+  "classification_report": {
+    "Not retained": {
+      "precision": 0.6872246696035242,
+      "recall": 0.5842696629213483,
+      "f1-score": 0.631578947368421,
+      "support": 267.0
+    },
+    "Retained": {
+      "precision": 0.7024128686327078,
+      "recall": 0.7867867867867868,
+      "f1-score": 0.7422096317280453,
+      "support": 333.0
+    },
+    "accuracy": 0.6966666666666667,
+    "macro avg": {
+      "precision": 0.694818769118116,
+      "recall": 0.6855282248540675,
+      "f1-score": 0.6868942895482332,
+      "support": 600.0
+    },
+    "weighted avg": {
+      "precision": 0.6956541200647212,
+      "recall": 0.6966666666666667,
+      "f1-score": 0.6929789771880125,
+      "support": 600.0
+    }
+  }
+}
